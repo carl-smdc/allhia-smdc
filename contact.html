@@ -96,9 +96,16 @@
                             <div class="col-lg-8 col-xl-6">
                                 <!-- Updated Contact Form -->
                                 <form
-                                    action="https://formspree.io/f/xldeddkr"
+                                    action="https://api.web3forms.com/submit"
                                     method="POST"
                                 >
+                                    <!-- Web3Forms access key -->
+                                    <input
+                                        type="hidden"
+                                        name="access_key"
+                                        value="fdec0063-b2f1-44fb-a836-f891509f98c9"
+                                    />
+
                                     <!-- Full name input-->
                                     <input
                                         class="form-control mb-3"
@@ -135,11 +142,12 @@
                                         required
                                     ></textarea>
 
-                                    <!-- Hidden field for setting the email subject -->
+                                    <!-- Honeypot field for spam protection -->
                                     <input
-                                        type="hidden"
-                                        name="_subject"
-                                        value="New contact form submission"
+                                        type="checkbox"
+                                        name="botcheck"
+                                        class="hidden"
+                                        style="display: none"
                                     />
 
                                     <!-- Submit button-->
