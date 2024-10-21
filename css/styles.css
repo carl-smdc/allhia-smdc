@@ -5627,6 +5627,9 @@ footer {
 }
 
 /* rtl:begin:ignore */
+
+
+
 .bs-tooltip-end .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow {
   left: 0;
   width: var(--bs-tooltip-arrow-height);
@@ -6044,6 +6047,11 @@ footer {
 @keyframes spinner-border {
   to {
     transform: rotate(360deg) /* rtl:ignore */;
+
+
+
+
+
   }
 }
 .spinner-border {
