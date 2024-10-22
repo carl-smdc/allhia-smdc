@@ -14,7 +14,60 @@
   from { opacity: 0; transform: translateX(50px); }
   to { opacity: 1; transform: translateX(0); }
 }
-/* From Uiverse.io by R0G3RF4 */ 
+
+.chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-toggle {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chatbot-popup {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0;
+    bottom: 50px; /* Above the toggle button */
+}
+
+.chatbot-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.bot-message {
+    text-align: left;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
 button {
   background: transparent;
   position: relative;
