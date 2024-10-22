@@ -152,7 +152,7 @@
                                         style="display: none"
                                     />
                                     <div
-                                        class="g-recaptcha recaptcha-container mb-3"
+                                        class="g-recaptcha mb-3"
                                         data-sitekey="6Ld7dmgqAAAAAMS7bzxSKr7tLJAbNFJx7EaarNlY"
                                         data-callback="onReCaptchaSuccess"
                                     ></div>
@@ -203,22 +203,5 @@
             async
             defer
         ></script>
-                <style>
-            /* Ensure reCAPTCHA scales properly */
-            .recaptcha-container {
-                text-align: center; /* Center the widget */
-                max-width: 100%; /* Set maximum width to fit the card */
-            }
-
-            /* Mobile View - Scale the reCAPTCHA */
-            @media (max-width: 600px) {
-                .g-recaptcha {
-                    transform: scale(0.85); /* Scale down for mobile */
-                    transform-origin: 0 0;
-                    -webkit-transform: scale(0.85);
-                    -webkit-transform-origin: 0 0;
-                }
-            }
-        </style>
     </body>
 </html>
