@@ -4,7 +4,7 @@ function onReCaptchaSuccess() {
 }
 
 // Ensure you have the necessary libraries loaded and your API key configured
-const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+const apiKey = 'AIzaSyAPL97COv1ZyyL5cO6NhjnboVbDXxYpiIc'; // Replace with your actual API key
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
