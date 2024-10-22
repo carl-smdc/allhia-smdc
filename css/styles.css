@@ -2076,6 +2076,13 @@ progress {
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
+/* Adjust the image size for mobile screens */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 100%; /* Make the image width responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
 .form-control-plaintext {
   display: block;
