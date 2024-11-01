@@ -53,3 +53,10 @@ async function sendMessage() {
   }
 }
 
+// Add an event listener for the Enter key in the input field
+document.getElementById("user-input").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent default Enter behavior
+    sendMessage(); // Call sendMessage on Enter
+  }
+});
