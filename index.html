@@ -534,34 +534,5 @@
   <button onclick="sendMessage()" style="margin-top: 8px; padding: 8px 12px; border-radius: 4px; background-color: #4CAF50; color: white; border: none;">Send</button>
 </div>
 
-<script>
-  async function sendMessage() {
-    const userInput = document.getElementById('user-input');
-    const chatMessages = document.getElementById('chat-messages');
-    
-    // Append user message to chat
-    const userMessage = document.createElement('div');
-    userMessage.textContent = "You: " + userInput.value;
-    chatMessages.appendChild(userMessage);
-
-    // Send user message to the serverless function
-    const response = await fetch('/.netlify/functions/chatbot', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: userInput.value })
-    });
-    const { reply } = await response.json();
-
-    // Append bot response to chat
-    const botMessage = document.createElement('div');
-    botMessage.textContent = "Bot: " + reply;
-    chatMessages.appendChild(botMessage);
-
-    // Clear input field
-    userInput.value = '';
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
-</script>
-
     </body>
 </html>
